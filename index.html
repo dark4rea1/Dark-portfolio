@@ -3,88 +3,133 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Esam Said Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <img src="gradient.png" alt="gradient" class="image-gradient">
   <div class="layer-blur"></div>
 
-  <div class="container"></div>
+  <!-- Header / Navigation -->
   <header class="fade-in" style="animation-delay: 0.2s;">
     <h1 class="logo"><strong>ESAM SAID</strong></h1>
     <nav>
-      <a href="#">about me</a>
-      <a href="#">projects</a>
+      <a href="#about">about me</a>
+      <a href="#projects">projects</a>
       <a href="#contact">contact</a>
     </nav>
     <button class="btn-signing">discord</button>
   </header>
 
-  <main class="fade-in" style="animation-delay: 0.5s;">
+  <!-- About Section -->
+  <section id="about" class="about-section fade-in" style="animation-delay: 0.5s;">
     <div class="content">
       <div class="tag-box">
         <div class="tag">about me &wedbar;</div>
       </div>
+      <h1>Hi, it's Esam Said <br>I'm a developer</h1>
+      <p class="description">
+        Front-end developer and university student at An-Najah National University,
+        working on web projects and creating a browser game with my solo team, <strong>Dream Leap.</strong>
+      </p>
 
-        <h1>Hi, it's Esam said <br>I'm a developer</h1>
+      <!-- Profile Picture: NOW placed after description and before social -->
+      <img src="pfp.png" alt="profile pic" class="pfp fade-in" style="animation-delay: 0.9s;">
 
-        <p class="description">
-         Front-end developer and university student at An-Najah National University,
-          working on web projects and creating a browser game with my solo team, <strong>Dream Leap.</strong>
-        </p>
-          
-           <!-- Social Media Buttons -->
-<div class="social-wrapper" style="margin-top: 2rem;">
-
-<a href="https://www.facebook.com/esam.saed.180" class="social-button" target="_blank" rel="noopener noreferrer">     <div class="icon"><img src="images/facebook.png" alt="Facebook" class="social-icon"></div>
-    <span>Facebook</span>
-  </a>
-<a href="https://x.com/dark4_real" class="social-button" target="_blank" rel="noopener noreferrer">  
-    <div class="icon"><img src="images/twitter.png" alt="Twitter" class="social-icon"></div>
-    <span>Twitter</span>
-  </a>
-<a href="https://www.instagram.com/venoxz2/" class="social-button" target="_blank" rel="noopener noreferrer">  
-    <div class="icon"><img src="images/instagram.png" alt="Instagram" class="social-icon"></div>
-    <span>Instagram</span>
-  </a>
-<a href="https://discord.gg/JnU5VyGNZh" class="social-button" target="_blank" rel="noopener noreferrer">  
-    <div class="icon"><img src="images/discord.png" alt="discord" class="social-icon"></div>
-    <span>Discord</span>
-  </a>
-<a href="https://www.youtube.com/@masidark8444" class="social-button" target="_blank" rel="noopener noreferrer">  
-    <div class="icon"><img src="images/youtube.png" alt="YouTube" class="social-icon"></div>
-    <span>YouTube</span>
-  </a>
-
-</div>
-
-        
-        <div class="buttons">
-          <a href="#" class="btn-get-started">hire me &gt;</a>
-          <a href="#" class="btn-signing-main">my projects &gt;</a>
-        </div>
+      <!-- Social Media Buttons -->
+      <div class="social-wrapper" style="margin-top: 2rem;">
+        <a href="https://www.facebook.com/esam.saed.180" class="social-button" target="_blank" rel="noopener noreferrer">
+          <div class="icon"><img src="socialicons/facebook.png" alt="Facebook" class="social-icon"></div>
+          <span>Facebook</span>
+        </a>
+        <a href="https://x.com/dark4_real" class="social-button" target="_blank" rel="noopener noreferrer">
+          <div class="icon"><img src="socialicons/twitter.png" alt="Twitter" class="social-icon"></div>
+          <span>Twitter</span>
+        </a>
+        <a href="https://www.instagram.com/venoxz2/" class="social-button" target="_blank" rel="noopener noreferrer">
+          <div class="icon"><img src="socialicons/instagram.png" alt="Instagram" class="social-icon"></div>
+          <span>Instagram</span>
+        </a>
+        <a href="https://discord.gg/JnU5VyGNZh" class="social-button" target="_blank" rel="noopener noreferrer">
+          <div class="icon"><img src="socialicons/discord.png" alt="discord" class="social-icon"></div>
+          <span>Discord</span>
+        </a>
+        <a href="https://www.youtube.com/@masidark8444" class="social-button" target="_blank" rel="noopener noreferrer">
+          <div class="icon"><img src="socialicons/youtube.png" alt="YouTube" class="social-icon"></div>
+          <span>YouTube</span>
+        </a>
       </div>
-  </main>
 
-  <img src="pfp.png" alt="profile pic" class="pfp fade-in" style="animation-delay: 0.9s;">
+      <div class="buttons">
+        <a href="#contact" class="btn-get-started">hire me &gt;</a>
+        <a href="#projects" class="btn-signing-main">my projects &gt;</a>
+      </div>
+    </div>
+  </section>
 
+  <hr class="blue-line">
 
+  <!-- Projects Section -->
+  <section id="projects" class="projects-section fade-in" style="animation-delay: 0.7s;">
+    <h2>Projects</h2>
+    <div class="wrapper1">
+      <div class="container1">
+        <input type="radio" name="slide" id="c1" checked>
+        <label for="c1" class="card">
+          <div class="row">
+            <div class="icon1">1</div>
+            <div class="description1">
+              <h4><strong>DREAMLEAP</strong></h4>
+              <p>DreamLeap MENA is a digital anime card game where players build decks, duel online, and unlock anime-style avatars.</p>
+            </div>
+          </div>
+        </label>
+
+        <input type="radio" name="slide" id="c2">
+        <label for="c2" class="card">
+          <div class="row">
+            <div class="icon">2</div>
+            <div class="description1">
+              <h4>My Portfolio</h4>
+              <p>A web app to showcase who I am, my projects, about me, and let you hire or reach out to me.</p>
+            </div>
+          </div>
+        </label>
+
+        <input type="radio" name="slide" id="c3">
+        <label for="c3" class="card">
+          <div class="row">
+            <div class="icon">3</div>
+            <div class="description1">
+              <h4>Dummy Project</h4>
+              <p>Description of the next project.</p>
+            </div>
+          </div>
+        </label>
+      </div>
+    </div>
+  </section>
+
+  <hr class="blue-line">
+
+  <!-- Contact Section -->
   <section id="contact" class="contact-section fade-in" style="animation-delay: 1s;">
-  <h2>Contact Me</h2>
-  <form class="contact-form">
-    <label for="name">Name</label>
-    <input type="text" id="name" name="name" placeholder="Your name" required>
+    <h2>Contact Me</h2>
+    <form class="contact-form">
+      <div>
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Your name" required>
+      </div>
 
-    <label for="email">Email</label>
-    <input type="email" id="email" name="email" placeholder="Your email" required>
+      
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Your email" required>
 
-    <label for="message">Message</label>
-    <textarea id="message" name="message" rows="5" placeholder="Your message" required></textarea>
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" placeholder="Your message" required></textarea>
 
-    <button type="submit">Submit</button>
-  </form>
-</section>
-
+      <button type="submit">Submit</button>
+    </form>
+  </section>
 </body>
 </html>
