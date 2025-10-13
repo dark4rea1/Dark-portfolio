@@ -252,6 +252,7 @@ transition: background-color 0.2s ease;
   transition: box-shadow 0.5s ease-in-out; 
 }
 
+
 .pfp:hover {
   box-shadow: 0 0 30px 7.5px rgba(92, 92, 92, 0.7);
 }
@@ -598,6 +599,113 @@ input:checked + label .description1 {
     background-image: url('./imgage3.png');
 }
 
+/* ============================= */
+/* Footer Base Styles */
+.footer {
+  background-color: rgba(20, 20, 20, 0.95);
+  color: #bababa;
+  padding: 4rem 5%;
+  border-top: 2px solid #444;
+  backdrop-filter: blur(10px);
+  width: 100%;            /* Full width */
+  box-sizing: border-box;  /* include padding in width */
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+  width: 100%;           /* make container full width */
+  max-width: 1200px;     /* max-width for large screens */
+  margin: 0 auto;        /* center on large screens */
+}
+
+.footer-section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #fff;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+}
+
+.footer-section p {
+  font-size: 1rem;
+  line-height: 1.5;
+  max-width: 300px;
+}
+
+.footer-section ul {
+  list-style: none;
+}
+
+.footer-section ul li {
+  margin-bottom: 0.8rem;
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  color: #bababa;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+  color: #fff;
+  text-shadow: 0 0 8px #0072ff;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+
+.footer-socials a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.footer-socials a img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.footer-socials a:hover {
+  transform: scale(1.2);
+  filter: drop-shadow(0 0 8px #0072ff);
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 3rem;
+  border-top: 1px solid #444;
+  padding-top: 1.5rem;
+  font-size: 0.9rem;
+  color: #888;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-section p,
+  .footer-section ul {
+    max-width: 100%;
+  }
+
+  .footer-socials a {
+    margin-bottom: 1rem;
+  }
+}
+
+
 /* ============responsives q - phone ================= */
 @media (max-width: 768px) {
 
@@ -714,7 +822,13 @@ input:checked + label .description1 {
 
 
 .contact-section {
-  margin-left: 20%;
+  margin-left: 10%;
   width: 120%;
 
 }
+
+.footer {
+  width: 576px;
+}
+}
+
